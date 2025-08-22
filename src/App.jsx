@@ -13,7 +13,7 @@ import UserContextProvider from './Components/Context/UserContext';
 import ProtectedRoute from './Components/protectedRoute/protectedRoute';
 import PostContextProvider from './Components/Context/PostContext';
 import { QueryClient, QueryClientProvider } from '@tanstack/react-query';
-ReactQuery
+
 import PostDetails from './Components/PostDetails/PostDetails';
 import { Toaster } from './../node_modules/react-hot-toast/src/components/toaster';
 
