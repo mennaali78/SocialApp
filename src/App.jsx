@@ -18,7 +18,7 @@ import PostDetails from './Components/PostDetails/PostDetails';
 import { Toaster } from './../node_modules/react-hot-toast/src/components/toaster';
 
 
-;
+
 
 
 
