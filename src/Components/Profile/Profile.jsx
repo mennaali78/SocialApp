@@ -8,9 +8,9 @@ import CreatePost from '../CreatePost/CreatePost';
 import UserPost from '../UserPost/UserPost';
 import Comment from '../Comment/Comment';
 
-export default function Profile() {
-  function getUserData(){
-    return axios.get(`https://linked-posts.routemisr.com/users/profile-data`,{
+export default async function Profile() {
+  async function getUserData(){
+    return await axios.get(`https://linked-posts.routemisr.com/users/profile-data`,{
 
       headers:{
         token:localStorage.getItem("token"),
@@ -24,6 +24,8 @@ let {data,isError,error,isLoading} = useQuery({
 
   });
   console.log(data);
+  let x = await getUserData();
+  console.log(x);
   return <>
  <div className='w-full md:w[80%] lg:w-[60%] mx-auto border-2 border-slate-800 rounded-lg p-4 mt-12 text-center'>
    <img src={data?.photo} className='size-[50px] mx-auto' />

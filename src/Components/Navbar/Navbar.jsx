@@ -31,7 +31,7 @@ let {data,isError,error,isLoading} = useQuery({
   })
   console.log(data);
 
-  return <>
+  return <> 
   
 
 <nav className="bg-cyan-600 text-white border-gray-200 dark:bg-gray-900">

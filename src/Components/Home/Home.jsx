@@ -92,7 +92,7 @@ export default function Home() {
     {post.image && <img src={post.image} className='w-full rounded-md' alt="" />}
    
     </Link>
-    <Comment comment={post.comments[0]}/>
+        {post.comments.length > 0 && <Comment comment={post.comments[0]}  /> }
   <CreateCommentModel postId={post.id}/>
       </div> 
       

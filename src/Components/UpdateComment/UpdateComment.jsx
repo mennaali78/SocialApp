@@ -11,7 +11,7 @@ export default function UpdateComment({id}) {
     content:"",
   
    },
-
+ 
   })
   console.log(form);
  

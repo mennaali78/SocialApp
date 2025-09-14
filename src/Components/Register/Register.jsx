@@ -26,8 +26,8 @@ export default function Register() {
       return userDate < today;
     },"Date of birth must be in the past"),
     gender:z.enum(["male","female"]),
-  }).refine((object)=>{  return object.password === object.rePassword},{error:"Passwords do not match", path:["rePassword"]});
-
+  }).refine((object)=>{  return object.password === object.rePassword},{error:"Passwords do not match", path:["re Password"]});
+ 
   const form =useForm({
      defaultValues: {
 
@@ -53,7 +53,7 @@ export default function Register() {
     axios.post(`https://linked-posts.routemisr.com/users/signup`,objectRedisterUserDetails).then((res)=>{
       if(res.data.message === "success"){
         // redirect to login page
-        setIsloading(false);
+         setIsloading(false); 
         navigate("/login");
         console.log(form);
       }
@@ -62,7 +62,7 @@ export default function Register() {
       setapiError(err.response.data.error);
     });
   
-  }
+  } 
   return <>
  
 <form onSubmit={handleSubmit(handleRegister)} className="max-w-md mx-auto my-12">

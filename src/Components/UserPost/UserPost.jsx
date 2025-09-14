@@ -64,7 +64,7 @@ export default function UserPost({id}) {
        </Link>
     {post.comments.length > 0 && <Comment comment={post.comments[0]}  /> }
    
-    
+     
    
       <div className="my-3 p-4 bg-slate-300 flex flex-column gap-5">
      <button className="bg-yellow-500 p-2 rounded-md w-full cursor-pointer" onClick={()=>{deletePost(post.id)}}>Delete Post</button>
